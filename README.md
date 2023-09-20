@@ -49,10 +49,77 @@ I use Balena Etcher in most cases https://etcher.balena.io/ . It's incredibly st
 
 If your system is not already setup to boot from USB you will need to press the BIOS key while your machine is booting. 
 
-> Most common BIOS keys are `DEL` or `F2` but that's not always the case. My current BIOS key is `F12`. You can check your motherboard's instruction manual to see which key is designated as your BIOS key. Some machines show which is your BIOS key on startup. 
+> ⚠️ Most common BIOS keys are `DEL` or `F2` but that's not always the case. My current BIOS key is `F12`. You can check your motherboard's instruction manual to see which key is designated as your BIOS key. Some machines show which is your BIOS key on startup. 
 
 2. Change USB to be first in boot order
 
 3. Restart the machine
+
+</details>
+
+<details>
+<summary>C. System Configuration</summary>
+
+1. Choose option from Install list
+
+I install using the default installer. 
+
+For the curious:
+
+`nomodeset` tells the kernel to not start video drivers until the system is up and running.
+
+`copytoram` copies the squash image to RAM but the contents get uncompressed on demand so it's a lot slower than reading from USB
+
+`debug` I believe runs in debug mode (where would I get that idea?) but I have not had a use for it yet and have not explored what it does exactly
+
+`serial console=ttyS0` ?
+
+`Memtest86+` test and stress test on x86 archetectures RAM
+
+2. Go through the installer prompts. My settings are as follows:
+
+Language: `American English`
+
+Time Zone: `PST` or `Los Angeles, CA, USA`
+
+Keyboard Layout: `English Default`
+
+User Info:
+    
+Full Name: Your Name
+
+Login: Login Name
+
+Password: your password
+
+Require strong passwords: ☑️
+
+Log in automatically: 🔳
+
+Use same password for the adminstrator account: 🔳
+
+Administrator Password: your admin password
+
+Desktop Environment: No desktop
+
+Allow unfree software: ☑️
+
+Erase Disk: ☑️
+
+Partions: If you are unsure of how to set up partitions leave as default
+
+Include image of this portion of nixos installer
+
+Summary: Be sure to go over and confirm everything is correct
+
+3. Install
+
+Press the `install` button, grab a glass of water, and wait.
+
+4. Restart
+
+Check the restart now box and click the Done button. 
+
+Great job! You have successfully installed NixOS (Else you've messed up somewhere, go try again)
 
 </details>
