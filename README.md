@@ -11,6 +11,9 @@
 3. [NixOS Config](#nixos-config)
 4. [bpswm Config](#bpswm-config)
 5. [sxhkd Config](#sxhkd-config)
+6. [Polybar Config](#polybar-config)
+7. [dmenu](#dmenu)
+8. [feh](#feh)
 
 </details>
 
@@ -123,3 +126,6 @@ Check the restart now box and click the Done button.
 Great job! You have successfully installed NixOS (Else you've messed up somewhere, go try again)
 
 </details>
+
+## NixOS Config
+
